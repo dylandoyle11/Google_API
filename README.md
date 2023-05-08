@@ -11,7 +11,7 @@ authenticate_personal(): Authenticates with Google Sheets API using personal cre
 authenticate_service(): Authenticates with Google Sheets API using a service account.
 For example:
 ```
-from gspread_api import GspreadAPI
+from google_auth import GspreadAPI
 
 # Authenticate using personal credentials
 client_personal = GspreadAPI.authenticate_personal()
@@ -25,7 +25,7 @@ Returns gspread object to be used with all existing gpsread methods.
 The GoogleDriveAPI class provides methods for interacting with Google Drive API. 
 
 ```
-from GoogleDriveAPI import GoogleDriveAPI
+from google_auth import GoogleDriveAPI
 
 # Initialize the GoogleDriveAPI object
 gdrive = GoogleDriveAPI(url="https://drive.google.com/drive/folders/<FOLDER_ID>")
